@@ -3,12 +3,13 @@ import { Quiz } from "./components/Quiz";
 import { Character } from "./components/Character";
 import { Loadnig } from "./components/Loading";
 import { connect } from "react-redux";
-import { fetch } from "./fetch"
 import { QuizData } from "./redux/reducers";
+import { bindActionCreators } from "redux";
+import { fetchData } from "./redux/fetchData";
 
 interface Props {
     data?: QuizData;
-    fetch: () => void,
+    fetchData: () => void,
 }
 
 interface State {
@@ -17,8 +18,10 @@ interface State {
 }
 
 export class App extends React.Component<Props, State> {
+    state: State = {};
+
     componentDidMount() {
-        this.props.fetch();
+        this.props.fetchData();
     }
 
     render() {
@@ -31,12 +34,19 @@ export class App extends React.Component<Props, State> {
         const onFinish = (characterId: number) => () => this.setState({ characterId });
         const character = characters && characters.find((item: CharacterInterface) => item.id === this.state.characterId);
 
-        return !character ? (
+        const onRestart = () => this.setState({ characterId: undefined });
+
+        return (
             <>
-                <h1>Which character are you?</h1>
-                <Quiz questions={questions} onFinish={onFinish} />
+                {!character ?
+                    <>
+                        <h1>Which character are you?</h1>
+                        <Quiz questions={questions} onFinish={onFinish} />
+                    </>
+                    : <Character {...character} />}
+                <button onClick={onRestart}>Restart</button>
             </>
-        ) : <Character {...character} />
+        )
     }
 }
 
@@ -44,9 +54,9 @@ const AppContainer = connect(
     (state: State) => ({
         data: state.data,
     }),
-    {
-        fetch,
-    }
+    (dispatch) => bindActionCreators({
+        fetchData,
+    }, dispatch)
 )(App);
 
 export default AppContainer;

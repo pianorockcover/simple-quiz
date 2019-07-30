@@ -11,7 +11,7 @@ interface Action {
 }
 
 // TODO: Remove ANY!!!
-export const dataReducer: Reducer<any, Action> = (state: {}, action: Action) => {
+export const dataReducer: Reducer<any, Action> = (state: {} = {}, action: Action) => {
     switch (action.type) {
         case "RECEIVE_DATA":
             return {
@@ -21,5 +21,3 @@ export const dataReducer: Reducer<any, Action> = (state: {}, action: Action) => 
             return state;
     }
 }
-
-export const reducers = combineReducers({ dataReducer });

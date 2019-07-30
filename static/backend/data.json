@@ -1,0 +1,30 @@
+{
+    "questions": [
+        {
+            "text": "What is your firstname",
+            "imageUrl": "https://img4.goodfon.ru/wallpaper/big/9/56/krka-national-park-croatia-krka-river-natsionalnyi-park-krka.jpg",
+            "answers": [
+                {
+                    "text": "Darth Vader",
+                    "characterId": 1
+                },
+                {
+                    "imageUrl": "https://img4.goodfon.ru/wallpaper/big/9/56/krka-national-park-croatia-krka-river-natsionalnyi-park-krka.jpg",
+                    "characterId": 2
+                }
+            ]
+        }
+    ],
+    "characters": [
+        {
+            "name": "Darth Vader",
+            "id": 1,
+            "imageUrl": "https://img4.goodfon.ru/wallpaper/big/9/56/krka-national-park-croatia-krka-river-natsionalnyi-park-krka.jpg"
+        },
+        {
+            "name": "Darth Maul",
+            "id": 2,
+            "imageUrl": "https://img4.goodfon.ru/wallpaper/big/9/56/krka-national-park-croatia-krka-river-natsionalnyi-park-krka.jpg"
+        }
+    ]
+}

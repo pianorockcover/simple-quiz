@@ -16,15 +16,16 @@ export const Question = (props: Props) => (
             {props.text}
         </div>
         <div className="answers">
-            {props.answers.map((answer: AnswerInterface) => {
-                const anserProps = {
+            {props.answers.map((answer: AnswerInterface, key: number) => {
+                const answerProps = {
                     onNext: props.onNext,
                     characterId: answer.characterId,
+                    key,
                 }
                 return (
                     <>
-                        {answer.imageUrl ? <AnswerImage imageUrl={answer.imageUrl} {...anserProps} />
-                            : answer.text ? <AnswerText text={answer.text} {...anserProps} />
+                        {answer.imageUrl ? <AnswerImage imageUrl={answer.imageUrl} {...answerProps} />
+                            : answer.text ? <AnswerText text={answer.text} {...answerProps} />
                                 : null}
                     </>
                 )

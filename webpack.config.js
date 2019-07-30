@@ -1,80 +1,80 @@
-const path = require("path");
-const CleanWebpackPlugin = require("clean-webpack-plugin");
-const CopyWebpackPlugin = require("copy-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+    const path = require("path");
+    const CleanWebpackPlugin = require("clean-webpack-plugin");
+    const CopyWebpackPlugin = require("copy-webpack-plugin");
+    const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
-module.exports = {
-    mode: "production",
-    entry: "./src/index.tsx",
-    output: {
-        filename: "[name].js",
-        path: __dirname + "/public_html"
-    },
+    module.exports = {
+        mode: "development",
+        entry: "./src/index.tsx",
+        output: {
+            filename: "[name].js",
+            path: __dirname + "/dist"
+        },
 
-    devtool: "source-map",
+        devtool: "source-map",
 
-    resolve: {
-        extensions: [".ts", ".tsx", ".js", ".json"]
-    },
+        resolve: {
+            extensions: [".ts", ".tsx", ".js", ".json"]
+        },
 
-    module: {
-        rules: [
-            {
-                test: /\.tsx?$/,
-                loader: "ts-loader",
-            },
-            {
-                test: /\.less$/,
-                use: [
-                    {
-                        loader: MiniCssExtractPlugin.loader
-                    },
-                    {
-                        loader: "style-loader!css-loader"
-                    },
-                    {
-                        loader: "less-loader",
+        module: {
+            rules: [
+                {
+                    test: /\.tsx?$/,
+                    loader: "ts-loader",
+                },
+                {
+                    test: /\.less$/,
+                    use: [
+                        {
+                            loader: MiniCssExtractPlugin.loader
+                        },
+                        {
+                            loader: "style-loader!css-loader"
+                        },
+                        {
+                            loader: "less-loader",
+                            options: {
+                                javascriptEnabled: true
+                            }
+                        },
+                    ]
+                },
+                {
+                    test: /\.woff$/,
+                    use: {
+                        loader: "url-loader",
                         options: {
-                            javascriptEnabled: true
-                        }
-                    },
-                ]
-            },
-            {
-                test: /\.woff$/,
-                use: {
-                    loader: "url-loader",
-                    options: {
-                        limit: 50000,
+                            limit: 50000,
+                        },
                     },
                 },
-            },
-            {
-                test: /\.css(\?|$)/,
-                loader: "style-loader!css-loader"
-            },
-            {
-                test: /\.(png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot)$/,
-                loader: 'file-loader'
-            },
-        ]
-    },
+                {
+                    test: /\.css(\?|$)/,
+                    loader: "style-loader!css-loader"
+                },
+                {
+                    test: /\.(png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot)$/,
+                    loader: 'file-loader'
+                },
+            ]
+        },
 
-    plugins: [
-        new CleanWebpackPlugin(["public_html"]),
-        new CopyWebpackPlugin(["static/"]),
-        new MiniCssExtractPlugin({
-            filename: "[name].css",
-            chunkFilename: "[id].css"
-        })
-    ],
+        plugins: [
+            new CleanWebpackPlugin(["dist"]),
+            new CopyWebpackPlugin(["static/"]),
+            new MiniCssExtractPlugin({
+                filename: "[name].css",
+                chunkFilename: "[id].css"
+            })
+        ],
 
-    devServer: {
-        contentBase: path.join(__dirname, "dist"),
-        compress: true,
-        port: 80,
-        inline: true,
-        open: true,
-        writeToDisk: true
-    }
-};
+        devServer: {
+            contentBase: path.join(__dirname, "dist"),
+            compress: true,
+            port: 80,
+            inline: true,
+            open: true,
+            writeToDisk: true
+        }
+    };

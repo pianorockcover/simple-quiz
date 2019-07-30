@@ -19,20 +19,21 @@ export class Quiz extends React.Component<Props, State> {
     }
 
     render() {
-        const { results, currentQuestionIndex } = this.state;
+        const { currentQuestionIndex } = this.state;
         const { questions, onFinish } = this.props;
 
         const question = questions[currentQuestionIndex];
         const onNext = (characterId: number) => () => {
             const newQuestionIndex = currentQuestionIndex + 1;
+            const results = this.state.results.concat([characterId]);
+
             return questions[newQuestionIndex]
                 ? this.setState({
-                    results: results.concat([characterId]),
+                    results,
                     currentQuestionIndex: newQuestionIndex,
                 })
-                : this.props.onFinish(getTheMostFrequentItem(results))()
+                : onFinish(getTheMostFrequentItem(results))()
         }
-
 
         return (
             <Question {...question} onNext={onNext} />
