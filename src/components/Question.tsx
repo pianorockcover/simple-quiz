@@ -1,5 +1,5 @@
 import * as React from "react";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+import { SimpleImg } from "react-simple-img";
 import { AnswerText } from "./answers/AnswerText";
 import { AnswerImage } from "./answers/AnswerImage";
 
@@ -10,7 +10,7 @@ type Props = QuestionInterface & {
 export const Question = (props: Props) => (
     <div className="question">
         <div className="image">
-            <LazyLoadImage src={props.imageUrl} />
+            <SimpleImg src={props.imageUrl} height={300} />
         </div>
         <div className="text">
             {props.text}

@@ -27,10 +27,10 @@
                     test: /\.less$/,
                     use: [
                         {
-                            loader: MiniCssExtractPlugin.loader
+                            loader: "style-loader",
                         },
                         {
-                            loader: "style-loader!css-loader"
+                            loader: "css-loader",
                         },
                         {
                             loader: "less-loader",

@@ -6,6 +6,8 @@ import { connect } from "react-redux";
 import { QuizData } from "./redux/reducers";
 import { bindActionCreators } from "redux";
 import { fetchData } from "./redux/fetchData";
+import "normalize.css";
+import "./styles/site.less";
 
 interface Props {
     data?: QuizData;

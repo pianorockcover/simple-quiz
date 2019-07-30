@@ -1,5 +1,5 @@
 import * as React from "react";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+import { SimpleImg } from "react-simple-img";
 import { Answer, AnswerProps } from "./Answer";
 
 type Props = Omit<AnswerProps, "text"> & {
@@ -9,7 +9,7 @@ type Props = Omit<AnswerProps, "text"> & {
 export class AnswerImage extends Answer<Props> {
     render() {
         return super.renderAnswer(
-            <LazyLoadImage src={this.props.imageUrl} />
+            <SimpleImg src={this.props.imageUrl} height={300} />
         )
     }
 }

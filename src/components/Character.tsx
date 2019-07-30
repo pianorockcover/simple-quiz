@@ -1,12 +1,12 @@
 import * as React from "react";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+import { SimpleImg } from "react-simple-img";
 
 type Props = CharacterInterface;
 
 export const Character = (props: Props) => (
     <div className="character">
         <div className="image">
-            <LazyLoadImage src={props.imageUrl} />
+            <SimpleImg src={props.imageUrl} height={300} />
         </div>
         <div className="text">
             You are <span>{props.name}</span>!
