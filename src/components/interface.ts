@@ -1,4 +1,4 @@
-interface Character {
+interface CharacterInterface {
     name: string;
     id: number;
 }
