@@ -1,6 +1,7 @@
 interface CharacterInterface {
     name: string;
     id: number;
+    imageUrl: string;
 }
 
 interface AnswerInterface {

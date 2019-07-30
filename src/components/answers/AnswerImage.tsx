@@ -9,10 +9,7 @@ type Props = Omit<AnswerProps, "text"> & {
 export class AnswerImage extends Answer<Props> {
     render() {
         return super.renderAnswer(
-            <LazyLoadImage
-                height={300}
-                width={300}
-                src={this.props.imageUrl} />
+            <LazyLoadImage src={this.props.imageUrl} />
         )
     }
 }

@@ -10,10 +10,7 @@ type Props = QuestionInterface & {
 export const Question = (props: Props) => (
     <div className="question">
         <div className="image">
-            <LazyLoadImage
-                height={300}
-                width={300}
-                src={props.imageUrl} />
+            <LazyLoadImage src={props.imageUrl} />
         </div>
         <div className="text">
             {props.text}
