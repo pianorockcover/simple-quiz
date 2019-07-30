@@ -1,0 +1,11 @@
+{
+  "name": "simple-quiz",
+  "version": "1.0.0",
+  "description": "Simple quiz made by Nick Paul",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
