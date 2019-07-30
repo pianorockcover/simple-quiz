@@ -40516,7 +40516,7 @@ react_dom__WEBPACK_IMPORTED_MODULE_1__["render"](react__WEBPACK_IMPORTED_MODULE_
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fetchData", function() { return fetchData; });
 const fetchData = () => (dispatch) => {
-    const url = "/backend/data.json";
+    const url = "backend/data.json";
     const oReq = new XMLHttpRequest();
     oReq.open("GET", url, true);
     oReq.setRequestHeader('Content-Type', 'application/json');
