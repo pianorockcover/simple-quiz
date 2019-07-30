@@ -9,7 +9,7 @@ type Props = Omit<AnswerProps, "text"> & {
 export class AnswerImage extends Answer<Props> {
     render() {
         return super.renderAnswer(
-            <SimpleImg src={this.props.imageUrl} height={300} />
+            <SimpleImg src={this.props.imageUrl} height={100} />
         )
     }
 }

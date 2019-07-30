@@ -46,7 +46,7 @@ export class App extends React.Component<Props, State> {
                         <Quiz questions={questions} onFinish={onFinish} />
                     </>
                     : <Character {...character} />}
-                <button onClick={onRestart}>Restart</button>
+                <button onClick={onRestart} className="restart">Restart</button>
             </>
         )
     }

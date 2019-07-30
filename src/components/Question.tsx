@@ -10,7 +10,7 @@ type Props = QuestionInterface & {
 export const Question = (props: Props) => (
     <div className="question">
         <div className="image">
-            <SimpleImg src={props.imageUrl} height={300} />
+            <SimpleImg src={props.imageUrl} height={170} />
         </div>
         <div className="text">
             {props.text}

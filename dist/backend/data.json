@@ -1,7 +1,7 @@
 {
     "questions": [
         {
-            "text": "What is your firstname",
+            "text": "What is your firstname?",
             "imageUrl": "https://img4.goodfon.ru/wallpaper/big/9/56/krka-national-park-croatia-krka-river-natsionalnyi-park-krka.jpg",
             "answers": [
                 {
@@ -9,7 +9,21 @@
                     "characterId": 1
                 },
                 {
-                    "imageUrl": "https://img4.goodfon.ru/wallpaper/big/9/56/krka-national-park-croatia-krka-river-natsionalnyi-park-krka.jpg",
+                    "text": "Darth Maul",
+                    "characterId": 2
+                }
+            ]
+        },
+        {
+            "text": "What is your lastname?",
+            "imageUrl": "https://img4.goodfon.ru/wallpaper/big/9/56/krka-national-park-croatia-krka-river-natsionalnyi-park-krka.jpg",
+            "answers": [
+                {
+                    "imageUrl": "https://poll2.mail.ru/media/pictures/01-2_7FQoTpS.jpg",
+                    "characterId": 1
+                },
+                {
+                    "imageUrl": "https://poll2.mail.ru/media/pictures/01-2_7FQoTpS.jpg",
                     "characterId": 2
                 }
             ]
