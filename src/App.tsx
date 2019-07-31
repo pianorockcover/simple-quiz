@@ -31,7 +31,7 @@ export class App extends React.Component<Props, State> {
             return <Loadnig />;
         }
 
-        const { questions, characters } = this.props.data;
+        const { questions, characters, title } = this.props.data;
 
         const onFinish = (characterId: number) => () => this.setState({ characterId });
         const character = characters && characters.find((item: CharacterInterface) => item.id === this.state.characterId);
@@ -42,11 +42,15 @@ export class App extends React.Component<Props, State> {
             <>
                 {!character ?
                     <>
-                        <h1>Which character are you?</h1>
+                        <h1>{title}</h1>
                         <Quiz questions={questions} onFinish={onFinish} />
                     </>
-                    : <Character {...character} />}
-                <button onClick={onRestart} className="restart">Restart</button>
+                    :
+                    <>
+                        <Character {...character} />
+                        <button onClick={onRestart} className="restart">Restart</button>
+                    </>
+                }
             </>
         )
     }

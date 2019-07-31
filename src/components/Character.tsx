@@ -6,7 +6,7 @@ type Props = CharacterInterface;
 export const Character = (props: Props) => (
     <div className="character">
         <div className="image">
-            <SimpleImg src={props.imageUrl} height={170} />
+            <SimpleImg src={props.imageUrl} height={300} />
         </div>
         <div className="text">
             You are <span>{props.name}</span>!

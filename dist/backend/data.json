@@ -1,44 +1,122 @@
 {
+    "title": "Which Modern Disney Princess Are You?",
     "questions": [
         {
-            "text": "What is your firstname?",
-            "imageUrl": "https://img4.goodfon.ru/wallpaper/big/9/56/krka-national-park-croatia-krka-river-natsionalnyi-park-krka.jpg",
+            "text": "Which of these classic princesses would you be roommates with?",
+            "imageUrl": "https://img.playbuzz.com/image/upload/ar_1.5,c_pad,f_jpg,b_auto/q_auto:good,f_auto,fl_lossy,w_640,c_limit/cdn/c4ca501e-5a8a-4473-89f4-af783e0b79f7/c391fcee-bcce-4c16-b9e8-c715b1d210c1_560_420.jpg",
             "answers": [
                 {
-                    "text": "Darth Vader",
+                    "text": "Aurora",
                     "characterId": 1
                 },
                 {
-                    "text": "Darth Maul",
-                    "characterId": 2
+                    "text": "Belle",
+                    "characterId": 1
+                },
+                {
+                    "text": "Ariel",
+                    "characterId": 1
+                },
+                {
+                    "text": "Cinderella",
+                    "characterId": 1
                 }
             ]
         },
         {
-            "text": "What is your lastname?",
-            "imageUrl": "https://img4.goodfon.ru/wallpaper/big/9/56/krka-national-park-croatia-krka-river-natsionalnyi-park-krka.jpg",
+            "text": "Which castle would you move into?",
+            "imageUrl": "https://img.playbuzz.com/image/upload/ar_1.5,c_pad,f_jpg,b_auto/q_auto:good,f_auto,fl_lossy,w_640,c_limit/cdn/c4ca501e-5a8a-4473-89f4-af783e0b79f7/c391fcee-bcce-4c16-b9e8-c715b1d210c1_560_420.jpg",
             "answers": [
                 {
-                    "imageUrl": "https://poll2.mail.ru/media/pictures/01-2_7FQoTpS.jpg",
+                    "text": "Rapunzel's",
                     "characterId": 1
                 },
                 {
-                    "imageUrl": "https://poll2.mail.ru/media/pictures/01-2_7FQoTpS.jpg",
-                    "characterId": 2
+                    "text": "Elsa's",
+                    "characterId": 1
+                },
+                {
+                    "text": "Ariel's",
+                    "characterId": 1
+                },
+                {
+                    "text": "Aurora's",
+                    "characterId": 1
+                }
+            ]
+        },
+        {
+            "text": "Which of these movies do you own on DVD?",
+            "imageUrl": "https://img.playbuzz.com/image/upload/ar_1.5,c_pad,f_jpg,b_auto/q_auto:good,f_auto,fl_lossy,w_640,c_limit/cdn/c4ca501e-5a8a-4473-89f4-af783e0b79f7/c391fcee-bcce-4c16-b9e8-c715b1d210c1_560_420.jpg",
+            "answers": [
+                {
+                    "text": "Bambi",
+                    "characterId": 1
+                },
+                {
+                    "text": "Aristocats",
+                    "characterId": 1
+                },
+                {
+                    "text": "Robin Hood",
+                    "characterId": 1
+                },
+                {
+                    "text": "The Hunchback of Notre Dame",
+                    "characterId": 1
+                }
+            ]
+        },
+        {
+            "text": "What is your favorite modern Disney song?",
+            "imageUrl": "https://img.playbuzz.com/image/upload/ar_1.5,c_pad,f_jpg,b_auto/q_auto:good,f_auto,fl_lossy,w_640,c_limit/cdn/c4ca501e-5a8a-4473-89f4-af783e0b79f7/c391fcee-bcce-4c16-b9e8-c715b1d210c1_560_420.jpg",
+            "answers": [
+                {
+                    "text": "When Will My Life Begin",
+                    "characterId": 1
+                },
+                {
+                    "text": "Let It Go",
+                    "characterId": 1
+                },
+                {
+                    "text": "How Far I'll Go",
+                    "characterId": 1
+                },
+                {
+                    "text": "Almost There",
+                    "characterId": 1
+                }
+            ]
+        },
+        {
+            "text": "Who would be your prince?",
+            "imageUrl": "https://img.playbuzz.com/image/upload/ar_1.5,c_pad,f_jpg,b_auto/q_auto:good,f_auto,fl_lossy,w_640,c_limit/cdn/c4ca501e-5a8a-4473-89f4-af783e0b79f7/c391fcee-bcce-4c16-b9e8-c715b1d210c1_560_420.jpg",
+            "answers": [
+                {
+                    "text": "Eugene",
+                    "characterId": 1
+                },
+                {
+                    "text": "Eric",
+                    "characterId": 1
+                },
+                {
+                    "text": "Philip",
+                    "characterId": 1
+                },
+                {
+                    "text": "Naveen",
+                    "characterId": 1
                 }
             ]
         }
     ],
     "characters": [
         {
-            "name": "Darth Vader",
+            "name": "Botanik RED21",
             "id": 1,
-            "imageUrl": "https://img4.goodfon.ru/wallpaper/big/9/56/krka-national-park-croatia-krka-river-natsionalnyi-park-krka.jpg"
-        },
-        {
-            "name": "Darth Maul",
-            "id": 2,
-            "imageUrl": "https://img4.goodfon.ru/wallpaper/big/9/56/krka-national-park-croatia-krka-river-natsionalnyi-park-krka.jpg"
+            "imageUrl": "https://www.meme-arsenal.com/memes/e276c9e40d526af7c310b4f45649a4b1.jpg"
         }
     ]
 }

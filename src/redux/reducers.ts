@@ -3,6 +3,7 @@ import { combineReducers, Reducer } from "redux";
 export interface QuizData {
     characters: CharacterInterface[];
     questions: QuestionInterface[];
+    title: string;
 }
 
 interface Action {
