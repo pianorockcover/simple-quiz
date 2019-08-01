@@ -12,6 +12,5 @@ interface AnswerInterface {
 
 interface QuestionInterface {
     text: string;
-    imageUrl: string;
     answers: AnswerInterface[];
 }

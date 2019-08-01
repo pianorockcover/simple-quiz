@@ -4,6 +4,8 @@ export interface QuizData {
     characters: CharacterInterface[];
     questions: QuestionInterface[];
     title: string;
+    desc: string;
+    imageUrl: string;
 }
 
 interface Action {

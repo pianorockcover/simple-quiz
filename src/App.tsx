@@ -8,6 +8,7 @@ import { bindActionCreators } from "redux";
 import { fetchData } from "./redux/fetchData";
 import "normalize.css";
 import "./styles/site.less";
+import { SimpleImg } from "react-simple-img";
 
 interface Props {
     data?: QuizData;
@@ -31,9 +32,9 @@ export class App extends React.Component<Props, State> {
             return <Loadnig />;
         }
 
-        const { questions, characters, title } = this.props.data;
+        const { questions, characters, title, imageUrl, desc } = this.props.data;
 
-        const onFinish = (characterId: number) => () => this.setState({ characterId });
+        const onFinish = (characterId: number) => this.setState({ characterId });
         const character = characters && characters.find((item: CharacterInterface) => item.id === this.state.characterId);
 
         const onRestart = () => this.setState({ characterId: undefined });
@@ -42,14 +43,17 @@ export class App extends React.Component<Props, State> {
             <>
                 {!character ?
                     <>
-                        <h1>{title}</h1>
+                        <h1><span>{title}</span></h1>
+                        <div className="image">
+                            <SimpleImg src={imageUrl} height={250} />
+                            <div className="desc">
+                                <h2>About This Quiz</h2>
+                                <p>{desc}</p>
+                            </div>
+                        </div>
                         <Quiz questions={questions} onFinish={onFinish} />
                     </>
-                    :
-                    <>
-                        <Character {...character} />
-                        <button onClick={onRestart} className="restart">Restart</button>
-                    </>
+                    : <Character {... { ...character, onRestart }} />
                 }
             </>
         )

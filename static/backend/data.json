@@ -1,9 +1,10 @@
 {
     "title": "Which Modern Disney Princess Are You?",
+    "imageUrl": "http://isha.sadhguru.org/blog/wp-content/uploads/2016/05/natures-temples.jpg",
+    "desc": "Disney princesses have been around since the 1930s and while most of them have been your stereotypical princess, over the last 10 years, we have seen a different era of princesses. Which one would you be? Let's find out!",
     "questions": [
         {
             "text": "Which of these classic princesses would you be roommates with?",
-            "imageUrl": "https://img.playbuzz.com/image/upload/ar_1.5,c_pad,f_jpg,b_auto/q_auto:good,f_auto,fl_lossy,w_640,c_limit/cdn/c4ca501e-5a8a-4473-89f4-af783e0b79f7/c391fcee-bcce-4c16-b9e8-c715b1d210c1_560_420.jpg",
             "answers": [
                 {
                     "text": "Aurora",
@@ -25,29 +26,27 @@
         },
         {
             "text": "Which castle would you move into?",
-            "imageUrl": "https://img.playbuzz.com/image/upload/ar_1.5,c_pad,f_jpg,b_auto/q_auto:good,f_auto,fl_lossy,w_640,c_limit/cdn/c4ca501e-5a8a-4473-89f4-af783e0b79f7/c391fcee-bcce-4c16-b9e8-c715b1d210c1_560_420.jpg",
             "answers": [
                 {
-                    "text": "Rapunzel's",
+                    "imageUrl": "http://isha.sadhguru.org/blog/wp-content/uploads/2016/05/natures-temples.jpg",
                     "characterId": 1
                 },
                 {
-                    "text": "Elsa's",
+                    "imageUrl": "http://isha.sadhguru.org/blog/wp-content/uploads/2016/05/natures-temples.jpg",
                     "characterId": 1
                 },
                 {
-                    "text": "Ariel's",
+                    "imageUrl": "http://isha.sadhguru.org/blog/wp-content/uploads/2016/05/natures-temples.jpg",
                     "characterId": 1
                 },
                 {
-                    "text": "Aurora's",
+                    "imageUrl": "http://isha.sadhguru.org/blog/wp-content/uploads/2016/05/natures-temples.jpg",
                     "characterId": 1
                 }
             ]
         },
         {
             "text": "Which of these movies do you own on DVD?",
-            "imageUrl": "https://img.playbuzz.com/image/upload/ar_1.5,c_pad,f_jpg,b_auto/q_auto:good,f_auto,fl_lossy,w_640,c_limit/cdn/c4ca501e-5a8a-4473-89f4-af783e0b79f7/c391fcee-bcce-4c16-b9e8-c715b1d210c1_560_420.jpg",
             "answers": [
                 {
                     "text": "Bambi",
@@ -69,7 +68,6 @@
         },
         {
             "text": "What is your favorite modern Disney song?",
-            "imageUrl": "https://img.playbuzz.com/image/upload/ar_1.5,c_pad,f_jpg,b_auto/q_auto:good,f_auto,fl_lossy,w_640,c_limit/cdn/c4ca501e-5a8a-4473-89f4-af783e0b79f7/c391fcee-bcce-4c16-b9e8-c715b1d210c1_560_420.jpg",
             "answers": [
                 {
                     "text": "When Will My Life Begin",
@@ -91,7 +89,6 @@
         },
         {
             "text": "Who would be your prince?",
-            "imageUrl": "https://img.playbuzz.com/image/upload/ar_1.5,c_pad,f_jpg,b_auto/q_auto:good,f_auto,fl_lossy,w_640,c_limit/cdn/c4ca501e-5a8a-4473-89f4-af783e0b79f7/c391fcee-bcce-4c16-b9e8-c715b1d210c1_560_420.jpg",
             "answers": [
                 {
                     "text": "Eugene",
@@ -116,7 +113,7 @@
         {
             "name": "Botanik RED21",
             "id": 1,
-            "imageUrl": "https://www.meme-arsenal.com/memes/e276c9e40d526af7c310b4f45649a4b1.jpg"
+            "imageUrl": "http://isha.sadhguru.org/blog/wp-content/uploads/2016/05/natures-temples.jpg"
         }
     ]
 }
