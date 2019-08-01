@@ -55,12 +55,12 @@ body {
         padding: 12px 24px 15px;
         position: relative;
         text-align: center;
-        background-image: url("../../static/img/icon-arrow-down.svg");
-        padding-bottom: 50px;
-        background-size: 30px;
-        background-repeat: no-repeat;
-        background-position-x: center;
-        background-position-y: 95%;
+
+        .arrow-down {
+            max-width: 20px;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
 
         h2 {
             font-weight: 500;
@@ -185,11 +185,26 @@ body {
                         }
                     }
                 }
-                
-                &:before {
-                    background-image: url("../../static/img/icon-check.svg");
-                }
 
+                &::before {
+                    content: "✔";
+                    position: absolute;
+                    display: block;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 100%;
+                    background-color: #fff;
+                    border: 2px solid #2a9ffb;
+                    top: -10px;
+                    left: -10px;
+                    background-size: 12px;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    z-index: 2;
+                    color: #2a9ffb;
+                    opacity: 0;
+                }
+                
                 &.answer-image {
                     padding: 0px;
 
@@ -217,20 +232,7 @@ body {
                     color: #fff;
 
                     &:before {
-                        content: " ";
-                        position: absolute;
-                        display: block;
-                        width: 20px;
-                        height: 20px;
-                        border-radius: 100%;
-                        background-color: #fff;
-                        border: 2px solid #2a9ffb;
-                        top: -10px;
-                        left: -10px;
-                        background-size: 12px;
-                        background-position: center;
-                        background-repeat: no-repeat;
-                        z-index: 2;
+                        opacity: 1;
                     }
 
                     &.answer-active {

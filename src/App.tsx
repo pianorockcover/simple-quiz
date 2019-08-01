@@ -55,6 +55,7 @@ export class App extends React.Component<Props, State> {
                             <div className="desc">
                                 <h2>About This Quiz</h2>
                                 <p>{desc}</p>
+                                <img src="img/icon-arrow-down.svg" className="arrow-down" />
                             </div>
                         </div>
                         <Quiz questions={questions} onFinish={onFinish} />
