@@ -35,7 +35,7 @@
                         {
                             loader: "less-loader",
                             options: {
-                                javascriptEnabled: true
+                                javascriptEnabled: true,
                             }
                         },
                     ]
