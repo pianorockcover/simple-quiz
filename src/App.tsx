@@ -34,7 +34,13 @@ export class App extends React.Component<Props, State> {
 
         const { questions, characters, title, imageUrl, desc } = this.props.data;
 
-        const onFinish = (characterId: number) => this.setState({ characterId });
+        const onFinish = (characterId: number) => {
+            window.scrollTo({
+                top: 0,
+                behavior: "auto",
+            });
+            this.setState({ characterId });
+        }
         const character = characters && characters.find((item: CharacterInterface) => item.id === this.state.characterId);
 
         const onRestart = () => this.setState({ characterId: undefined });

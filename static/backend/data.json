@@ -1,119 +1,197 @@
 {
-    "title": "Which Modern Disney Princess Are You?",
-    "imageUrl": "http://isha.sadhguru.org/blog/wp-content/uploads/2016/05/natures-temples.jpg",
-    "desc": "Disney princesses have been around since the 1930s and while most of them have been your stereotypical princess, over the last 10 years, we have seen a different era of princesses. Which one would you be? Let's find out!",
+    "title": "Which Fast Food Item Are You?",
+    "imageUrl": "backend/images/1.jpg",
+    "desc": "Here's to hoping \"you are what you eat\" is actually true! Are you as cheesy as a pizza or as salty as a piece of fried fish? Take this simple quiz and find out!",
     "questions": [
         {
-            "text": "Which of these classic princesses would you be roommates with?",
+            "text": "What is/was your favorite subject in school?",
+            "type": "text",
             "answers": [
                 {
-                    "text": "Aurora",
+                    "text": "Math",
                     "characterId": 1
                 },
                 {
-                    "text": "Belle",
+                    "text": "English",
+                    "characterId": 2
+                },
+                {
+                    "text": "Biology",
+                    "characterId": 3
+                },
+                {
+                    "text": "Geography",
+                    "characterId": 2
+                },
+                {
+                    "text": "Something else",
                     "characterId": 1
                 },
                 {
-                    "text": "Ariel",
-                    "characterId": 1
+                    "text": "Lunch break was the best",
+                    "characterId": 4
+                }
+            ]
+        },
+        {
+            "text": "Pick an ice cream flavor",
+            "type": "image",
+            "answers": [
+                {
+                    "imageUrl": "backend/images/2.jpg",
+                    "characterId": 3
                 },
                 {
-                    "text": "Cinderella",
+                    "imageUrl": "backend/images/3.jpg",
+                    "characterId": 2
+                },
+                {
+                    "imageUrl": "backend/images/4.jpg",
+                    "characterId": 4
+                },
+                {
+                    "imageUrl": "backend/images/5.jpg",
+                    "characterId": 3
+                },
+                {
+                    "imageUrl": "backend/images/6.jpg",
                     "characterId": 1
                 }
             ]
         },
         {
-            "text": "Which castle would you move into?",
+            "text": "Which of those adjectives describes you best?",
+            "type": "text",
             "answers": [
                 {
-                    "imageUrl": "http://isha.sadhguru.org/blog/wp-content/uploads/2016/05/natures-temples.jpg",
+                    "text": "Intelligent",
+                    "characterId": 2
+                },
+                {
+                    "text": "Creative",
+                    "characterId": 4
+                },
+                {
+                    "text": "Friendly",
+                    "characterId": 3
+                },
+                {
+                    "text": "Careful",
                     "characterId": 1
                 },
                 {
-                    "imageUrl": "http://isha.sadhguru.org/blog/wp-content/uploads/2016/05/natures-temples.jpg",
-                    "characterId": 1
+                    "text": "Protective",
+                    "characterId": 4
                 },
                 {
-                    "imageUrl": "http://isha.sadhguru.org/blog/wp-content/uploads/2016/05/natures-temples.jpg",
-                    "characterId": 1
+                    "text": "Curious",
+                    "characterId": 2
+                }
+            ]
+        },
+        {
+            "text": "Which one of these American cities would you like to visit?",
+            "type": "text",
+            "answers": [
+                {
+                    "text": "Chicago",
+                    "characterId": 3
                 },
                 {
-                    "imageUrl": "http://isha.sadhguru.org/blog/wp-content/uploads/2016/05/natures-temples.jpg",
+                    "text": "New York",
+                    "characterId": 4
+                },
+                {
+                    "text": "Los Angeles",
+                    "characterId": 3
+                },
+                {
+                    "text": "Las Vegas",
+                    "characterId": 3
+                },
+                {
+                    "text": "San Francisco",
+                    "characterId": 2
+                },
+                {
+                    "text": "Washington D.C.",
                     "characterId": 1
                 }
             ]
         },
         {
-            "text": "Which of these movies do you own on DVD?",
+            "text": "Pick your favorite side",
+            "type": "image",
             "answers": [
                 {
-                    "text": "Bambi",
-                    "characterId": 1
+                    "imageUrl": "backend/images/7.jpg",
+                    "characterId": 4
                 },
                 {
-                    "text": "Aristocats",
-                    "characterId": 1
+                    "imageUrl": "backend/images/8.jpg",
+                    "characterId": 2
                 },
                 {
-                    "text": "Robin Hood",
-                    "characterId": 1
+                    "imageUrl": "backend/images/9.jpg",
+                    "characterId": 3
                 },
                 {
-                    "text": "The Hunchback of Notre Dame",
+                    "imageUrl": "backend/images/10.jpg",
+                    "characterId": 3
+                },
+                {
+                    "text": "Tortilla chips",
+                    "imageUrl": "backend/images/11.jpg",
+                    "characterId": 2
+                },
+                {
+                    "text": "Something else",
                     "characterId": 1
                 }
             ]
-        },
-        {
-            "text": "What is your favorite modern Disney song?",
+        },{
+            "text": "Choose a style of restaurant",
+            "type": "text",
             "answers": [
                 {
-                    "text": "When Will My Life Begin",
-                    "characterId": 1
+                    "text": "Pub",
+                    "characterId": 3
                 },
                 {
-                    "text": "Let It Go",
-                    "characterId": 1
+                    "text": "Mall food court",
+                    "characterId": 2
                 },
                 {
-                    "text": "How Far I'll Go",
-                    "characterId": 1
-                },
-                {
-                    "text": "Almost There",
-                    "characterId": 1
-                }
-            ]
-        },
-        {
-            "text": "Who would be your prince?",
-            "answers": [
-                {
-                    "text": "Eugene",
-                    "characterId": 1
-                },
-                {
-                    "text": "Eric",
-                    "characterId": 1
-                },
-                {
-                    "text": "Philip",
-                    "characterId": 1
-                },
-                {
-                    "text": "Naveen",
-                    "characterId": 1
+                    "text": "Drive-thru",
+                    "characterId": 3
                 }
             ]
         }
     ],
     "characters": [
         {
-            "name": "Botanik RED21",
+            "name": "PIZZA",
             "id": 1,
-            "imageUrl": "http://isha.sadhguru.org/blog/wp-content/uploads/2016/05/natures-temples.jpg"
+            "imageUrl": "backend/images/12.jpg",
+            "fact": "When you think pizza you think Italiano, but the origin of pizza goes back to ancient times. Greeks and Egyptians were cooking a pizza like flatbread and topping it with olive oil and spices. The “modern pizza” as we  know it evolved in Naples Italy, when tomato was added to in the late 18th century."
+        },
+        {
+            "name": "BURGER",
+            "id": 2,
+            "imageUrl": "backend/images/13.jpg",
+            "fact": "How big was the biggest Hamburger? Well, it was a giant. In 1982, 10,000 people came to taste the largest Hamburger ever built. Even if it was just a single bite; imagine the mammoth size that was needed to feed those 10,000 mouths. The burger weighed a staggering 3,591 pounds."
+        },
+        {
+            "name": "SUSHI",
+            "id": 3,
+            "imageUrl": "backend/images/14.jpg",
+            "fact": "Traditionally, sushi is eaten with hands. “There is beauty in the process of the sushi experience where it’s made by hands, served by hands, and eaten by hands, so go ahead and use your hands,” says renowned sushi Chef Masaharu Morimoto in an interview with The Feast."
+        },
+        {
+            "name": "ROLL",
+            "id": 4,
+            "imageUrl": "backend/images/15.jpg",
+            "fact": "Americans eat more than 300 million sandwiches every day – an amazing statistic since there are slightly more than 300 million Americans. The most popular sandwich in America is the standard ham sandwich (ham, cheese, and mustard or mayonnaise), followed by the BLT."
         }
     ]
 }

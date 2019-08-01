@@ -47,7 +47,7 @@ export class Quiz extends React.Component<Props, State> {
             }
 
             return (
-                <div ref={questionRef}>
+                <div ref={questionRef} key={key}>
                     <Question {...{
                         ...question,
                         onNext,

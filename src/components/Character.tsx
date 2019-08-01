@@ -13,6 +13,9 @@ export const Character = (props: Props) => (
         <div className="text">
             You are <span>{props.name}</span>!
         </div>
+        <div className="desc">
+            <span>Fun fact:</span> {props.fact}
+        </div>
         <button onClick={props.onRestart} className="restart">Restart</button>
     </div>
 );

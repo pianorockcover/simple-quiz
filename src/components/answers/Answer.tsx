@@ -7,14 +7,14 @@ export type AnswerProps = AnswerInterface & {
 }
 
 export class Answer<T extends AnswerProps> extends React.Component<T> {
-    className = "";
+    type = "";
 
     renderAnswer(content: React.ReactNode) {
         const { characterId, isActive, index, onNext } = this.props;
 
         return (
             <div
-                className={`answer answer-${this.className} ${isActive ? "answer-active" : ""}`}
+                className={`answer answer-${this.type} ${isActive ? "answer-active" : ""}`}
                 onClick={onNext(characterId, index)}
             >
                 {content}

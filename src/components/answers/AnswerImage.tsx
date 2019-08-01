@@ -7,7 +7,7 @@ type Props = Omit<AnswerProps, "text"> & {
 }
 
 export class AnswerImage extends Answer<Props> {
-    className = "image";
+    type = "image";
     
     render() {
         return super.renderAnswer(

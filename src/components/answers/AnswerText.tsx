@@ -6,6 +6,8 @@ type Props = Omit<AnswerProps, "imageUrl"> & {
 }
 
 export class AnswerText extends Answer<Props> {
+    type = "text";
+
     render() {
         return super.renderAnswer(<span>{this.props.text}</span>);
     }

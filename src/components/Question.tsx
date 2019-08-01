@@ -17,14 +17,14 @@ export class Question extends React.Component<Props, State> {
     state: State = {};
 
     render() {
-        const { isActive, index, amount, text, answers } = this.props;
+        const { isActive, index, amount, text, answers, type } = this.props;
         const onNext = (characterId: number, activeAnswerIndex: number) => () => {
             this.setState({ activeAnswerIndex });
             this.props.onNext(characterId);
         }
 
         return (
-            <div className={`question ${isActive ? "question-active" : ""}`}>
+            <div className={`question question-${type} ${isActive ? "question-active" : ""}`}>
                 <div className="label">{`${index + 1} / ${amount}`}</div>
                 <div className="text">
                     {text}
@@ -33,18 +33,17 @@ export class Question extends React.Component<Props, State> {
                     {answers.map((answer: AnswerInterface, key: number) => {
                         const answerProps = {
                             characterId: answer.characterId,
-                            isActive: this.state.activeAnswerIndex === key,
-                            key,
                             index: key,
+                            isActive: this.state.activeAnswerIndex === key,
                             onNext,
                         }
 
                         return (
-                            <>
+                            <div key={key}>
                                 {answer.imageUrl ? <AnswerImage imageUrl={answer.imageUrl} {...answerProps} />
                                     : answer.text ? <AnswerText text={answer.text} {...answerProps} />
                                         : null}
-                            </>
+                            </div>
                         )
                     })}
 
