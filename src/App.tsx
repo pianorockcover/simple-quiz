@@ -1,27 +1,29 @@
-import * as React from "react";
-import { Quiz } from "./components/Quiz";
-import { Character } from "./components/Character";
-import { Loadnig } from "./components/Loading";
-import { connect } from "react-redux";
-import { QuizData } from "./redux/reducers";
-import { bindActionCreators } from "redux";
-import { fetchData } from "./redux/fetchData";
-import "normalize.css";
 import "./styles/site.less";
+import "normalize.css";
+import { bindActionCreators } from "redux";
+import { Character } from "./components/Character";
+import { connect } from "react-redux";
+import { fetchData } from "./redux/fetchData";
+import { Loadnig } from "./components/Loading";
+import { Quiz } from "./components/Quiz";
+import { QuizData } from "./redux/reducers";
 import { SimpleImg } from "react-simple-img";
+import * as React from "react";
 
-interface Props {
+interface AppProps {
     data?: QuizData;
     fetchData: () => void,
 }
 
-interface State {
+export interface AppState {
     characterId?: number;
     data?: QuizData;
 }
 
-export class App extends React.Component<Props, State> {
-    state: State = {};
+export const initialState: AppState = {};
+
+export class App extends React.Component<AppProps, AppState> {
+    state = initialState;
 
     componentDidMount() {
         this.props.fetchData();
@@ -34,16 +36,10 @@ export class App extends React.Component<Props, State> {
 
         const { questions, characters, title, imageUrl, desc } = this.props.data;
 
-        const onFinish = (characterId: number) => {
-            window.scrollTo({
-                top: 0,
-                behavior: "auto",
-            });
-            this.setState({ characterId });
-        }
-        const character = characters && characters.find((item: CharacterInterface) => item.id === this.state.characterId);
-
+        const onFinish = (characterId: number) => this.setState({ characterId });
         const onRestart = () => this.setState({ characterId: undefined });
+
+        const character = characters && characters.find((item: CharacterInterface) => item.id === this.state.characterId);
 
         return (
             <>
@@ -51,7 +47,11 @@ export class App extends React.Component<Props, State> {
                     <>
                         <h1><span>{title}</span></h1>
                         <div className="image">
-                            <SimpleImg src={imageUrl} height={250} />
+                            <SimpleImg
+                                src={imageUrl}
+                                height={250}
+                                className="main-quiz-image"
+                            />
                             <div className="desc">
                                 <h2>About This Quiz</h2>
                                 <p>{desc}</p>
@@ -68,7 +68,7 @@ export class App extends React.Component<Props, State> {
 }
 
 const AppContainer = connect(
-    (state: State) => ({
+    (state: AppState) => ({
         data: state.data,
     }),
     (dispatch) => bindActionCreators({

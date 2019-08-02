@@ -12,7 +12,7 @@
   "dependencies": {
     "@types/favicons": "^5.3.2",
     "@types/html2canvas": "0.0.35",
-    "@types/jquery": "^3.3.29",
+    "@types/jquery": "^3.3.30",
     "@types/lodash": "^4.14.126",
     "@types/react-input-mask": "^2.0.1",
     "@types/react-maskedinput": "^4.0.4",
@@ -32,7 +32,7 @@
     "html2canvas": "^1.0.0-rc.1",
     "http": "0.0.0",
     "image-file-to-base64-exif": "^1.0.3",
-    "jquery": "^3.4.0",
+    "jquery": "^3.4.1",
     "jquery-touchswipe": "^1.6.19",
     "lamejs": "^1.2.0",
     "lodash": "^4.17.11",

@@ -1,18 +1,18 @@
 interface CharacterInterface {
-    name: string;
+    fact: string;
     id: number;
     imageUrl: string;
-    fact: string;
+    name: string;
 }
 
 interface AnswerInterface {
-    text?: string;
     characterId: number;
     imageUrl?: string;
+    text?: string;
 }
 
 interface QuestionInterface {
+    answers: AnswerInterface[];
     text: string;
     type: "text" | "image";
-    answers: AnswerInterface[];
 }

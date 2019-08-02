@@ -8,10 +8,14 @@ type Props = Omit<AnswerProps, "text"> & {
 
 export class AnswerImage extends Answer<Props> {
     type = "image";
-    
+
     render() {
         return super.renderAnswer(
-            <SimpleImg src={this.props.imageUrl} height={100} />
+            <SimpleImg
+                src={this.props.imageUrl}
+                height={100}
+                style={{ background: "#f4f4f4" }}
+            />
         )
     }
 }

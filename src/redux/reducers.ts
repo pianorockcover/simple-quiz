@@ -1,20 +1,20 @@
-import { combineReducers, Reducer } from "redux";
+import { Reducer } from "redux";
+import { AppState, initialState } from "../App";
 
 export interface QuizData {
     characters: CharacterInterface[];
-    questions: QuestionInterface[];
-    title: string;
     desc: string;
     imageUrl: string;
+    questions: QuestionInterface[];
+    title: string;
 }
 
 interface Action {
-    type: string;
     data?: QuizData;
+    type: string;
 }
 
-// TODO: Remove ANY!!!
-export const dataReducer: Reducer<any, Action> = (state: {} = {}, action: Action) => {
+export const dataReducer: Reducer<AppState, Action> = (state = initialState, action: Action) => {
     switch (action.type) {
         case "RECEIVE_DATA":
             return {

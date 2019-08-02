@@ -17,6 +17,9 @@ export class Answer<T extends AnswerProps> extends React.Component<T> {
                 className={`answer answer-${this.type} ${isActive ? "answer-active" : ""}`}
                 onClick={onNext(characterId, index)}
             >
+                <div className="checked-label">
+                    <img src="img/icon-checked.svg" className="checked-label-icon"/>
+                </div>
                 {content}
             </div>
         );

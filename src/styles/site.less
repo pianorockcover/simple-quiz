@@ -45,6 +45,13 @@ body {
         }
     }
 
+    .main-quiz-image {
+        &,
+        &>div {
+            background: #c1c1c1 !important;
+        }
+    }
+
     .desc {
         width: 90%;
         margin: 0 auto;
@@ -52,7 +59,7 @@ body {
         margin-top: 10px;
         background-color: #fff;
         margin-top: -20px;
-        padding: 12px 24px 15px;
+        padding: 20px 24px 15px;
         position: relative;
         text-align: center;
 
@@ -186,8 +193,7 @@ body {
                     }
                 }
 
-                &::before {
-                    content: "✔";
+                .checked-label {
                     position: absolute;
                     display: block;
                     width: 20px;
@@ -203,6 +209,15 @@ body {
                     z-index: 2;
                     color: #2a9ffb;
                     opacity: 0;
+                    align-items: center;
+                    justify-content: center;
+                
+                    .checked-label-icon {
+                        width: 10px;
+                        display: inline-block;
+                        position: relative;
+                        top: -2px;
+                    }
                 }
                 
                 &.answer-image {
@@ -231,7 +246,7 @@ body {
                     background-color: #2a9ffb;
                     color: #fff;
 
-                    &:before {
+                    .checked-label {
                         opacity: 1;
                     }
 
@@ -358,10 +373,16 @@ body {
                     width: 100%;
 
                     &.answer-image {
-                        img {
+                        img:not([class]) {
                             width: 100%;
                             height: auto !important;
                         }
+                    }
+                }
+
+                .answer-text {
+                    span {
+                        width: 100%;
                     }
                 }
             }

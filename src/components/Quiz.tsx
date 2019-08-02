@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Question } from "./Question";
-import { getTheMostFrequentItem } from "./helpers";
+import { getTheMostFrequentItem, scrollPageTo } from "./helpers";
 
 interface Props {
     questions: QuestionInterface[];
@@ -37,9 +37,10 @@ export class Quiz extends React.Component<Props, State> {
 
                     const { offsetTop, offsetHeight } = questionRef!.current!;
 
-                    return window.scrollTo({
-                        behavior: "smooth",
+                    return scrollPageTo({
                         top: (offsetTop + offsetHeight + 40),
+                        delay: 100,
+                        speed: 800,
                     })
                 }
 
