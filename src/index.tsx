@@ -1,12 +1,12 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-import { Provider } from "react-redux";
-import { store } from "./redux/store";
-import AppContainer from "./App";
+import SimpleQuiz from "./App";
+import queryString from "query-string";
+
+const query = queryString.parse(location.search);
+const apiUrl = `backend/${query.q || "default"}.json`
 
 ReactDOM.render(
-    <Provider store={store}>
-        <AppContainer />
-    </Provider>,
+    <SimpleQuiz apiUrl={apiUrl} />,
     document.getElementById("app") as HTMLElement,
 );

@@ -1,7 +1,6 @@
-export const fetchData = () => (dispatch: (action: any) => void) => {
-    const url = "backend/data.json";
+export const fetchData = (apiUrl: string) => (dispatch: (action: any) => void) => {
     const oReq = new XMLHttpRequest();
-    oReq.open("GET", url, true);
+    oReq.open("GET", apiUrl, true);
     oReq.setRequestHeader('Content-Type', 'application/json');
 
     oReq.onload = () =>

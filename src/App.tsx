@@ -5,14 +5,17 @@ import { Character } from "./components/Character";
 import { connect } from "react-redux";
 import { fetchData } from "./redux/fetchData";
 import { Loadnig } from "./components/Loading";
+import { Provider } from "react-redux";
 import { Quiz } from "./components/Quiz";
 import { QuizData } from "./redux/reducers";
 import { SimpleImg } from "react-simple-img";
+import { store } from "./redux/store";
 import * as React from "react";
 
 interface AppProps {
     data?: QuizData;
-    fetchData: () => void,
+    fetchData: (apiUrl: string) => void,
+    apiUrl: string;
 }
 
 export interface AppState {
@@ -26,7 +29,7 @@ export class App extends React.Component<AppProps, AppState> {
     state = initialState;
 
     componentDidMount() {
-        this.props.fetchData();
+        this.props.fetchData(this.props.apiUrl);
     }
 
     render() {
@@ -76,4 +79,10 @@ const AppContainer = connect(
     }, dispatch)
 )(App);
 
-export default AppContainer;
+const SimpleQuiz: React.SFC<{ apiUrl: string }> = (props) => (
+    <Provider store={store}>
+        <AppContainer apiUrl={props.apiUrl} />
+    </Provider>
+)
+
+export default SimpleQuiz;

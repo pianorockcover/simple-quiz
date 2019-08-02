@@ -337,7 +337,13 @@ body {
 }
 
 @media screen and (max-width: 650px) {
+    * {
+        transition: none !important;
+    }
+    
     .app {
+        width: 450px;
+
         > .image {
             img {
                 width: 150%;
