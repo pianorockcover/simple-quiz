@@ -1,4 +1,4 @@
-# Simple Quiz Engine
+# Simple Quiz Maker
 
 Simple quiz engine build with TypeScript + React + Redux
 
