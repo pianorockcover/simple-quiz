@@ -33,7 +33,7 @@
     "html2canvas": "^1.0.0-rc.1",
     "http": "0.0.0",
     "image-file-to-base64-exif": "^1.0.3",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "jquery-touchswipe": "^1.6.19",
     "lamejs": "^1.2.0",
     "lodash": "^4.17.11",
