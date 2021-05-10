@@ -36,7 +36,7 @@
     "jquery": "^3.4.1",
     "jquery-touchswipe": "^1.6.19",
     "lamejs": "^1.2.0",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.21",
     "moment": "^2.24.0",
     "node-lame": "^1.2.0",
     "normalize.css": "^8.0.1",
